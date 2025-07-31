@@ -21,11 +21,11 @@ A modern, full-stack expense tracking application built with React, TypeScript, 
 
 ## 🚀 Demo
 
-[Live Demo](https://your-demo-url.com) (Replace with your actual deployment URL)
+Coming Soon
 
 ## 📸 Screenshots
 
-<!-- Add screenshots of your application here -->
+Coming soon
 
 ## 🛠️ Tech Stack
 
