@@ -16,14 +16,13 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import { Expense, CurrencyInfo } from "./ExpenseForm";
+import type { Expense, CurrencyInfo } from "./ExpenseForm";
 import { useState } from "react";
 import {
   format,
   startOfMonth,
-  endOfMonth,
-  isSameDay,
   parseISO,
+  endOfMonth,
 } from "date-fns";
 
 interface ExpenseListProps {
@@ -77,14 +76,6 @@ export function ExpenseList({
   const sortedDateKeys = Object.keys(groupedByDate).sort(
     (a, b) => new Date(b).getTime() - new Date(a).getTime()
   );
-
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString("en-US", {
-      month: "short",
-      day: "numeric",
-      year: "numeric",
-    });
-  };
 
   const formatAmount = (amount: number, type: "expense" | "income") => {
     const formatted = currency.hasDecimals

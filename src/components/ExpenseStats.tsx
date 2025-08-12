@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TrendingUp, TrendingDown, DollarSign, PieChart } from "lucide-react";
-import { Expense, CurrencyInfo } from "./ExpenseForm";
+import type { Expense, CurrencyInfo } from "./ExpenseForm";
 
 interface ExpenseStatsProps {
   expenses: Expense[];
